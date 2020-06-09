@@ -1,0 +1,10 @@
+<form>
+  <div *ngFor="let field of fieldset" class="field {{field.type}}">
+    <label *ngIf="field.label && field.value && field.type !== 'checkbox'" [for]="field.name">{{field.label}}</label>
+    <input [type]="field.type" [id]="field.name" [name]="field.name" [placeholder]="field.label" [(ngModel)]="field.value">
+    <label *ngIf="field.label && field.type === 'checkbox'" [for]="field.name">{{field.label}}</label>
+
+  </div>
+
+  <button type="submit" class="btn">{{submitText}}</button>
+</form>

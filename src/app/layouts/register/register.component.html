@@ -1,0 +1,12 @@
+<div class="wrapper">
+
+  <header class="form-header">
+    <h1>Регистрация</h1>
+    <span>Введите свои данные</span>
+  </header>
+
+  <app-form [fieldset]="fieldset" submitText="ЗАРЕГИСТРИРОВАТЬСЯ" (formSubmit)="onFormSubmit($event)"></app-form>
+
+  <footer class="form-footer">Есть аккаунт? <a routerLink="/auth"> Войти </a></footer>
+
+</div>

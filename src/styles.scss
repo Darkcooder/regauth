@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+
+@font-face {
+  font-family: 'SF Compact Display';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SF Compact Display Medium'), url('assets/fonts/sf-compact-display-medium.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  color: #1C1C1C;
+}
+
+.wrapper {
+  margin: auto;
+  display: block;
+  text-align: center;
+  width: 500px;
+}
+
+.form-header {
+  margin-top: 136px;
+  margin-bottom: 98px;
+  text-align: center;
+  h1 {
+    font-size: 47px;
+    font-weight: 500;
+  }
+  span{
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+.form-footer{
+  margin-top: 30px;
+  text-align: center;
+  font-family: SF Compact Display, sans-serif;
+  font-size: 17px;
+  color: #939292;
+
+  a{
+    text-decoration: none;
+    color: #20201F;
+  }
+}
